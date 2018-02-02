@@ -1,5 +1,7 @@
 package com.model;
 
+import java.util.Date;
+
 public class User {
     private Integer id;
 
@@ -8,6 +10,8 @@ public class User {
     private String password;
 
     private Integer age;
+
+    private Date lastation;
 
     public Integer getId() {
         return id;
@@ -39,5 +43,13 @@ public class User {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    public Date getLastation() {
+        return lastation;
+    }
+
+    public void setLastation(Date lastation) {
+        this.lastation = lastation;
     }
 }

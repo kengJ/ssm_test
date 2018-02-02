@@ -1,6 +1,7 @@
 package com.model;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class UserExample {
@@ -361,6 +362,66 @@ public class UserExample {
 
         public Criteria andAgeNotBetween(Integer value1, Integer value2) {
             addCriterion("age not between", value1, value2, "age");
+            return (Criteria) this;
+        }
+
+        public Criteria andLastationIsNull() {
+            addCriterion("lastation is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLastationIsNotNull() {
+            addCriterion("lastation is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLastationEqualTo(Date value) {
+            addCriterion("lastation =", value, "lastation");
+            return (Criteria) this;
+        }
+
+        public Criteria andLastationNotEqualTo(Date value) {
+            addCriterion("lastation <>", value, "lastation");
+            return (Criteria) this;
+        }
+
+        public Criteria andLastationGreaterThan(Date value) {
+            addCriterion("lastation >", value, "lastation");
+            return (Criteria) this;
+        }
+
+        public Criteria andLastationGreaterThanOrEqualTo(Date value) {
+            addCriterion("lastation >=", value, "lastation");
+            return (Criteria) this;
+        }
+
+        public Criteria andLastationLessThan(Date value) {
+            addCriterion("lastation <", value, "lastation");
+            return (Criteria) this;
+        }
+
+        public Criteria andLastationLessThanOrEqualTo(Date value) {
+            addCriterion("lastation <=", value, "lastation");
+            return (Criteria) this;
+        }
+
+        public Criteria andLastationIn(List<Date> values) {
+            addCriterion("lastation in", values, "lastation");
+            return (Criteria) this;
+        }
+
+        public Criteria andLastationNotIn(List<Date> values) {
+            addCriterion("lastation not in", values, "lastation");
+            return (Criteria) this;
+        }
+
+        public Criteria andLastationBetween(Date value1, Date value2) {
+            addCriterion("lastation between", value1, value2, "lastation");
+            return (Criteria) this;
+        }
+
+        public Criteria andLastationNotBetween(Date value1, Date value2) {
+            addCriterion("lastation not between", value1, value2, "lastation");
             return (Criteria) this;
         }
     }
