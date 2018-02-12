@@ -83,6 +83,13 @@
  		<version>${spring.version}</version>
  	</dependency>
  	
+ 	<!-- spring aop 注解 -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aspects</artifactId>
+        <version>${spring.version}</version>
+    </dependency>
+ 	
  	<!-- mybatis核心包 -->
  	<dependency>
  		<groupId>org.mybatis</groupId>
@@ -167,6 +174,12 @@
  		<artifactId>commons-codec</artifactId>
  		<version>1.9</version>
  	</dependency> 
+ 	
+ 	<dependency>
+    <groupId>javax.inject</groupId>
+    <artifactId>javax.inject</artifactId>
+    <version>1</version>
+</dependency>
  </dependencies>
  <!-- 
  <build>
